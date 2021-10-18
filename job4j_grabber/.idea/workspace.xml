@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e86abdbe-69be-44c3-a1fa-525b4427a7bd" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="agregator: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="agregator: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="agregator: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="agregator: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="agregator: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="posts: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\projects\job4j_grabber\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qULadFz7K2dx93wTQfZiblxOo2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.job4j.grabber" />
+      <recent name="ru.job4j.grabber.utils" />
+      <recent name="ru.job4j.quartz" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.job4j.grabber" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.job4j.grabber" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MemStore">
+    <configuration name="Grabber$GrabJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.grabber.Grabber$GrabJob" />
+      <module name="job4j_grabber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.grabber.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Grabber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.grabber.Grabber" />
+      <module name="job4j_grabber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemStore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.store.MemStore" />
+      <module name="job4j_grabber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PsqlStore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.store.PsqlStore" />
+      <module name="job4j_grabber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SqlRuParse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.html.SqlRuParse" />
+      <module name="job4j_grabber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.html.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MemStore" />
+        <item itemvalue="Application.PsqlStore" />
+        <item itemvalue="Application.Grabber$GrabJob" />
+        <item itemvalue="Application.SqlRuParse" />
+        <item itemvalue="Application.Grabber" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.15505464" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@45f4b570" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@45f4b570" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@35a2af25" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@45f4b570" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@183ccfa1" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e86abdbe-69be-44c3-a1fa-525b4427a7bd" name="Default Changelist" comment="" />
+      <created>1617129288033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617129288033</updated>
+      <workItem from="1617129297701" duration="1710000" />
+      <workItem from="1617131748310" duration="267000" />
+      <workItem from="1617133360536" duration="259000" />
+      <workItem from="1617166251652" duration="1037000" />
+      <workItem from="1617191338790" duration="1671000" />
+      <workItem from="1617193201309" duration="624000" />
+      <workItem from="1617288821061" duration="1311000" />
+      <workItem from="1617384931964" duration="1923000" />
+      <workItem from="1617387293298" duration="644000" />
+      <workItem from="1617388191636" duration="1352000" />
+      <workItem from="1617455607084" duration="7070000" />
+      <workItem from="1617471039849" duration="3302000" />
+      <workItem from="1617545609727" duration="1530000" />
+      <workItem from="1617549399018" duration="2235000" />
+      <workItem from="1617551780463" duration="252000" />
+      <workItem from="1617552560340" duration="601000" />
+      <workItem from="1617598746466" duration="1962000" />
+      <workItem from="1617631623708" duration="14439000" />
+      <workItem from="1617685844335" duration="609000" />
+      <workItem from="1617716743999" duration="5745000" />
+      <workItem from="1617733485694" duration="2534000" />
+      <workItem from="1617809919830" duration="16023000" />
+      <workItem from="1617892200704" duration="13551000" />
+      <workItem from="1617913009475" duration="211000" />
+      <workItem from="1618070203039" duration="4587000" />
+      <workItem from="1618125692654" duration="585000" />
+      <workItem from="1618150299636" duration="6548000" />
+      <workItem from="1618226214905" duration="14905000" />
+      <workItem from="1618321918480" duration="10588000" />
+      <workItem from="1618379656815" duration="1669000" />
+      <workItem from="1618494568768" duration="15106000" />
+      <workItem from="1618520953106" duration="575000" />
+      <workItem from="1618586825346" duration="10021000" />
+      <workItem from="1618598179906" duration="2805000" />
+      <workItem from="1618639038824" duration="11227000" />
+      <workItem from="1618848305949" duration="7939000" />
+      <workItem from="1618944054683" duration="4247000" />
+      <workItem from="1619019068619" duration="14652000" />
+      <workItem from="1619035481030" duration="991000" />
+      <workItem from="1619191207111" duration="7497000" />
+      <workItem from="1619245678491" duration="14015000" />
+      <workItem from="1619269545232" duration="609000" />
+      <workItem from="1619279558182" duration="2066000" />
+      <workItem from="1619289798984" duration="1787000" />
+      <workItem from="1619330840735" duration="4373000" />
+      <workItem from="1619364248585" duration="9762000" />
+      <workItem from="1619417650066" duration="3475000" />
+      <workItem from="1619452339457" duration="2971000" />
+      <workItem from="1619456671708" duration="369000" />
+      <workItem from="1619538135413" duration="6109000" />
+      <workItem from="1619596709189" duration="1803000" />
+      <workItem from="1619615120027" duration="954000" />
+      <workItem from="1619631822472" duration="351000" />
+      <workItem from="1619632246365" duration="1420000" />
+      <workItem from="1619633895027" duration="471000" />
+      <workItem from="1619634545117" duration="57000" />
+      <workItem from="1619635738137" duration="550000" />
+      <workItem from="1619636631280" duration="231000" />
+      <workItem from="1619672259564" duration="748000" />
+      <workItem from="1619673354754" duration="1090000" />
+      <workItem from="1619682615530" duration="4085000" />
+      <workItem from="1619696428163" duration="1006000" />
+      <workItem from="1619790017671" duration="977000" />
+      <workItem from="1619793633233" duration="7767000" />
+      <workItem from="1619871148595" duration="421000" />
+      <workItem from="1619872739587" duration="2165000" />
+      <workItem from="1620714882023" duration="2172000" />
+      <workItem from="1623427503836" duration="761000" />
+      <workItem from="1623434489074" duration="226000" />
+      <workItem from="1623685782400" duration="1748000" />
+      <workItem from="1623688857482" duration="32000" />
+      <workItem from="1623690924329" duration="612000" />
+      <workItem from="1623771325833" duration="59000" />
+      <workItem from="1634390509223" duration="412000" />
+    </task>
+    <task id="LOCAL-00001" summary="create">
+      <created>1617129621035</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617129621035</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init maven">
+      <created>1617129853336</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617129853336</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added markers">
+      <created>1617133596524</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617133596524</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Quartz [#435959]">
+      <created>1617386275231</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617386275231</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Quartz [#435959]">
+      <created>1617464204487</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617464204487</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Quartz [#435959]">
+      <created>1617472653839</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617472653839</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Quartz [#435959]">
+      <created>1617642914191</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617642914192</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Quartz [#435959]">
+      <created>1617643601601</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617643601601</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Quartz [#435959]">
+      <created>1617648447617</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617648447617</updated>
+    </task>
+    <task id="LOCAL-00010" summary=" Job c параметрами [#435963]">
+      <created>1617892280498</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617892280498</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Парсинг HTML страницы. [#435961]">
+      <created>1618070891678</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618070891678</updated>
+    </task>
+    <task id="LOCAL-00012" summary=" Преобразование даты [#435969]">
+      <created>1618072822676</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618072822676</updated>
+    </task>
+    <task id="LOCAL-00013" summary=" Парсинг https://www.sql.ru/forum/job-offers/3 [#435965]">
+      <created>1618157524651</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618157524655</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Модель данных - Post. [#435966]">
+      <created>1618239427310</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618239427310</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Загрузка деталей поста. [#435967]">
+      <created>1618250986175</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1618250986175</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Загрузка деталей поста. [#435967]">
+      <created>1618251227574</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1618251227574</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Загрузка деталей поста. [#435967]">
+      <created>1618289881646</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618289881646</updated>
+    </task>
+    <task id="LOCAL-00018" summary=" Модель данных - Post. [#435966]">
+      <created>1618322382022</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618322382022</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Загрузка деталей поста. [#435967]">
+      <created>1618337819993</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1618337819993</updated>
+    </task>
+    <task id="LOCAL-00020" summary=" Модель данных - Post. [#435966]">
+      <created>1618497589025</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1618497589025</updated>
+    </task>
+    <task id="LOCAL-00021" summary=" SqlRuParse [#435968]">
+      <created>1618589331866</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1618589331867</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Архитектура проекта - Аргегатора Java Вакансий [#435962]">
+      <created>1618598636665</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1618598636665</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Архитектура проекта - Аргегатора Java Вакансий [#435962]">
+      <created>1618600257422</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1618600257422</updated>
+    </task>
+    <task id="LOCAL-00024" summary="SqlRuParse [#435968]">
+      <created>1618642767501</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1618642767502</updated>
+    </task>
+    <task id="LOCAL-00025" summary=" Схема таблицы Post [#435972]">
+      <created>1618645042922</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1618645042922</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Архитектура проекта - Аргегатора Java Вакансий [#435962]">
+      <created>1618648772825</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1618648772825</updated>
+    </task>
+    <task id="LOCAL-00027" summary="PsqlStore [#435964]">
+      <created>1618948429002</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1618948429002</updated>
+    </task>
+    <task id="LOCAL-00028" summary="PsqlStore [#435964]">
+      <created>1619035592502</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1619035592503</updated>
+    </task>
+    <task id="LOCAL-00029" summary=" Grabber. [#435970]">
+      <created>1619290264555</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1619290264555</updated>
+    </task>
+    <task id="LOCAL-00030" summary=" Grabber. [#435970]">
+      <created>1619377241364</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1619377241364</updated>
+    </task>
+    <task id="LOCAL-00031" summary=" Web. [#435971]">
+      <created>1619543773602</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1619543773603</updated>
+    </task>
+    <task id="LOCAL-00032" summary=" Web. [#435971]">
+      <created>1619615960283</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1619615960284</updated>
+    </task>
+    <task id="LOCAL-00033" summary=" Web. [#435971]">
+      <created>1619672958281</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1619672958281</updated>
+    </task>
+    <task id="LOCAL-00034" summary=" Web. [#435971]">
+      <created>1619695057088</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1619695057088</updated>
+    </task>
+    <task id="LOCAL-00035" summary=" Web. [#435971]">
+      <created>1619812614259</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1619812614259</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix travis build">
+      <created>1620715422319</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1620715422319</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create" />
+    <MESSAGE value="Init maven" />
+    <MESSAGE value="Added markers" />
+    <MESSAGE value="Quartz [#435959]" />
+    <MESSAGE value=" Job c параметрами [#435963]" />
+    <MESSAGE value="Парсинг HTML страницы. [#435961]" />
+    <MESSAGE value=" Преобразование даты [#435969]" />
+    <MESSAGE value=" Парсинг https://www.sql.ru/forum/job-offers/3 [#435965]" />
+    <MESSAGE value="Модель данных - Post. [#435966]" />
+    <MESSAGE value="Загрузка деталей поста. [#435967]" />
+    <MESSAGE value=" Модель данных - Post. [#435966]" />
+    <MESSAGE value=" SqlRuParse [#435968]" />
+    <MESSAGE value="SqlRuParse [#435968]" />
+    <MESSAGE value=" Схема таблицы Post [#435972]" />
+    <MESSAGE value="Архитектура проекта - Аргегатора Java Вакансий [#435962]" />
+    <MESSAGE value="PsqlStore [#435964]" />
+    <MESSAGE value=" Grabber. [#435970]" />
+    <MESSAGE value=" Web. [#435971]" />
+    <MESSAGE value="fix travis build" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix travis build" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="503" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1618287648551">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="503" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1618287648551" />
+    <state x="428" y="11" key="CommitChangelistDialog2" timestamp="1618289880903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="428" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1618289880903" />
+    <state width="1492" height="376" key="GridCell.Tab.0.bottom" timestamp="1619637000590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="376" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619637000590" />
+    <state width="1492" height="376" key="GridCell.Tab.0.center" timestamp="1619637000590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="376" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619637000590" />
+    <state width="1492" height="376" key="GridCell.Tab.0.left" timestamp="1619637000590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="376" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619637000590" />
+    <state width="1492" height="376" key="GridCell.Tab.0.right" timestamp="1619637000590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="376" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619637000590" />
+    <state width="1492" height="329" key="GridCell.Tab.1.bottom" timestamp="1618292226734">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="329" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618292226734" />
+    <state width="1492" height="329" key="GridCell.Tab.1.center" timestamp="1618292226734">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="329" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618292226734" />
+    <state width="1492" height="329" key="GridCell.Tab.1.left" timestamp="1618292226734">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="329" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618292226734" />
+    <state width="1492" height="329" key="GridCell.Tab.1.right" timestamp="1618292226734">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="329" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618292226734" />
+    <state x="365" y="147" key="Vcs.Push.Dialog.v2" timestamp="1618289884363">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="365" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618289884363" />
+    <state x="470" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1618287731762">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="470" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1618287731762" />
+  </component>
+</project>
