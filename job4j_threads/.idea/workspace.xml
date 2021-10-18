@@ -8,6 +8,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -33,6 +40,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -51,6 +62,26 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="ConcurrentOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConcurrentOutput" />
+      <module name="job4j_threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConcurrentOutput" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -63,7 +94,9 @@
       <updated>1634500191751</updated>
       <workItem from="1634500195105" duration="1070000" />
       <workItem from="1634546878979" duration="2956000" />
-      <workItem from="1634570709680" duration="386000" />
+      <workItem from="1634570709680" duration="2327000" />
+      <workItem from="1634576819702" duration="1715000" />
+      <workItem from="1634579220410" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1634500528956</created>
@@ -72,7 +105,42 @@
       <option name="project" value="LOCAL" />
       <updated>1634500528956</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Init travis &amp; jacoco">
+      <created>1634575656083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634575656083</updated>
+    </task>
+    <task id="LOCAL-00003" summary="README">
+      <created>1634576034061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634576034061</updated>
+    </task>
+    <task id="LOCAL-00004" summary="README">
+      <created>1634576107462</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634576107462</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added markers">
+      <created>1634576477291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634576477291</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" Запуск нити. Thread#start() [#1016]">
+      <created>1634579950850</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634579950850</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +161,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Init travis &amp; jacoco" />
+    <MESSAGE value="README" />
+    <MESSAGE value="Added markers" />
+    <MESSAGE value=" Запуск нити. Thread#start() [#1016]" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Запуск нити. Thread#start() [#1016]" />
   </component>
 </project>
