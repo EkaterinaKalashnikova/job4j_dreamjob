@@ -33,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j_prime" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -96,7 +96,9 @@
       <workItem from="1634546878979" duration="2956000" />
       <workItem from="1634570709680" duration="2327000" />
       <workItem from="1634576819702" duration="1715000" />
-      <workItem from="1634579220410" duration="1874000" />
+      <workItem from="1634579220410" duration="1876000" />
+      <workItem from="1634622141448" duration="2702000" />
+      <workItem from="1634655407101" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1634500528956</created>
@@ -140,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634579950850</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=" Запуск нити. Thread#start() [#1016]">
+      <created>1634630193563</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634630193563</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
