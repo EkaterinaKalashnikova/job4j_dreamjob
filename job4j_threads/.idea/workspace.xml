@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ba2af2d-c3de-4957-b142-b06bdd79bf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/concurrent/ThreadState.java" afterDir="false" />
+    <list default="true" id="9de2bd30-0228-407e-83b1-024f59a8e7ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/Temp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,12 +13,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="5b618e26-4045-4510-8bb8-dcc0c0204b85" />
@@ -30,12 +34,23 @@
       </set>
     </option>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1zeEXLQZ3npAdXOjw8eOPvT0tQS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j_prime-1" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j_primera" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,11 +60,28 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.job4j.pool" />
+      <recent name="ru.job4j.cache" />
+      <recent name="ru.job4j" />
+      <recent name="ru.job4j.buffer" />
+      <recent name="ru.job4j.thread" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.job4j.thread" />
+      <recent name="ru.job4j.ref" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\projects\job4j_threads" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.job4j.pool" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -64,13 +96,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadState">
+  <component name="RunManager" selected="Application.ParallelSearch">
     <configuration name="ConcurrentOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConcurrentOutput" />
       <module name="job4j_threads" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleProgress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConsoleProgress" />
+      <module name="job4j_threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.buffer.ParallelSearch" />
+      <module name="job4j_threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.buffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,10 +149,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Wget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.Wget" />
+      <module name="job4j_threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Wget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.thread.Wget" />
+      <module name="job4j_threads" />
+      <option name="PROGRAM_PARAMETERS" value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-fy33rDHu55DBz4TdoCjGEXBW3BkDEsJOA&amp;usqp=CAU" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Wset" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.thread.Wset" />
+      <module name="job4j_threads" />
+      <option name="PROGRAM_PARAMETERS" value="https://pets.mail.ru/pic/pets/2019/07/15/Depositphotos_122763100_s-2019_1_1.jpg 3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Wset" />
+      <item itemvalue="Application.ConcurrentOutput" />
+      <item itemvalue="Application.ConsoleProgress" />
+      <item itemvalue="Application.ThreadState" />
+      <item itemvalue="Application.Wget" />
+      <item itemvalue="Application.ParallelSearch" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ParallelSearch" />
+        <item itemvalue="Application.Wget" />
+        <item itemvalue="Application.ConsoleProgress" />
         <item itemvalue="Application.ThreadState" />
-        <item itemvalue="Application.ConcurrentOutput" />
+        <item itemvalue="Application.Wget" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +213,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ba2af2d-c3de-4957-b142-b06bdd79bf49" name="Default Changelist" comment="" />
+      <changelist id="9de2bd30-0228-407e-83b1-024f59a8e7ca" name="Default Changelist" comment="" />
       <created>1634500191751</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -119,57 +229,468 @@
       <workItem from="1634722232557" duration="483000" />
       <workItem from="1634722841124" duration="2404000" />
       <workItem from="1634799472508" duration="1238000" />
+      <workItem from="1635093691641" duration="609000" />
+      <workItem from="1635138471855" duration="3760000" />
+      <workItem from="1635173881646" duration="5822000" />
+      <workItem from="1635225259522" duration="1251000" />
+      <workItem from="1635264420460" duration="9972000" />
+      <workItem from="1635325246268" duration="1556000" />
+      <workItem from="1635344136230" duration="10122000" />
+      <workItem from="1635397510011" duration="2108000" />
+      <workItem from="1635405506174" duration="744000" />
+      <workItem from="1635437167695" duration="5639000" />
+      <workItem from="1635443435485" duration="330000" />
+      <workItem from="1635498707436" duration="648000" />
+      <workItem from="1635602440036" duration="4751000" />
+      <workItem from="1635780760162" duration="10128000" />
+      <workItem from="1635866403424" duration="3110000" />
+      <workItem from="1635955785838" duration="212000" />
+      <workItem from="1635956098622" duration="1082000" />
+      <workItem from="1635958037512" duration="2251000" />
+      <workItem from="1636027838786" duration="5769000" />
+      <workItem from="1636087146389" duration="2008000" />
+      <workItem from="1636092747071" duration="1567000" />
+      <workItem from="1636133453713" duration="1914000" />
+      <workItem from="1636141772960" duration="988000" />
+      <workItem from="1636181146899" duration="12348000" />
+      <workItem from="1636305677630" duration="666000" />
+      <workItem from="1636386659052" duration="6138000" />
+      <workItem from="1636435805080" duration="3139000" />
+      <workItem from="1636648630391" duration="1950000" />
+      <workItem from="1636697078106" duration="3137000" />
+      <workItem from="1636726065994" duration="4588000" />
+      <workItem from="1636805729512" duration="6151000" />
+      <workItem from="1636822652980" duration="887000" />
+      <workItem from="1636905810270" duration="6691000" />
+      <workItem from="1636995613920" duration="6009000" />
+      <workItem from="1637004409533" duration="1132000" />
+      <workItem from="1637040830320" duration="4610000" />
+      <workItem from="1637069014360" duration="4226000" />
+      <workItem from="1637125195451" duration="4916000" />
+      <workItem from="1637155857669" duration="4962000" />
+      <workItem from="1637242823815" duration="10033000" />
+      <workItem from="1637331721804" duration="9883000" />
+      <workItem from="1637407914281" duration="8152000" />
+      <workItem from="1637686512130" duration="5566000" />
+      <workItem from="1637730486873" duration="4404000" />
+      <workItem from="1637848091123" duration="5014000" />
+      <workItem from="1637903716074" duration="1876000" />
+      <workItem from="1637943068965" duration="2126000" />
+      <workItem from="1637951298338" duration="617000" />
+      <workItem from="1638002194386" duration="3344000" />
+      <workItem from="1638259657362" duration="3301000" />
+      <workItem from="1638296464644" duration="1911000" />
+      <workItem from="1638335036074" duration="3513000" />
+      <workItem from="1638463790695" duration="1957000" />
+      <workItem from="1638507926640" duration="1259000" />
+      <workItem from="1638547787310" duration="11148000" />
+      <workItem from="1638622338718" duration="8520000" />
+      <workItem from="1638721344563" duration="2083000" />
+      <workItem from="1638731796100" duration="138000" />
+      <workItem from="1638810598094" duration="4956000" />
+      <workItem from="1638820489423" duration="1426000" />
+      <workItem from="1638876805049" duration="1427000" />
+      <workItem from="1638890239273" duration="6523000" />
+      <workItem from="1638968293497" duration="15169000" />
+      <workItem from="1639061238315" duration="3537000" />
+      <workItem from="1639150206889" duration="1612000" />
+      <workItem from="1639220600176" duration="6804000" />
+      <workItem from="1639236508113" duration="431000" />
+      <workItem from="1639419523806" duration="909000" />
+      <workItem from="1639502403820" duration="5189000" />
+      <workItem from="1639550596824" duration="4505000" />
+      <workItem from="1639576100460" duration="902000" />
+      <workItem from="1639667913643" duration="8376000" />
+      <workItem from="1639717361951" duration="5207000" />
+      <workItem from="1639750056309" duration="3067000" />
+      <workItem from="1639815735612" duration="1691000" />
+      <workItem from="1639831115290" duration="2522000" />
+      <workItem from="1640019619582" duration="1620000" />
+      <workItem from="1640184130465" duration="7976000" />
+      <workItem from="1640247241742" duration="773000" />
+      <workItem from="1640273826970" duration="11244000" />
+      <workItem from="1640333040707" duration="1776000" />
+      <workItem from="1640358159922" duration="5156000" />
+      <workItem from="1640426451342" duration="6978000" />
+      <workItem from="1640537859163" duration="5565000" />
+      <workItem from="1640581752729" duration="2190000" />
+      <workItem from="1640619762823" duration="2144000" />
+      <workItem from="1640670143870" duration="996000" />
+      <workItem from="1640698935455" duration="7953000" />
+      <workItem from="1640766095934" duration="126000" />
+      <workItem from="1640767721717" duration="1710000" />
+      <workItem from="1640781730752" duration="178000" />
+      <workItem from="1640781930320" duration="4669000" />
+      <workItem from="1640803519342" duration="3390000" />
+      <workItem from="1640934197767" duration="2247000" />
+      <workItem from="1641139361024" duration="4447000" />
+      <workItem from="1641217417259" duration="1784000" />
+      <workItem from="1641276824380" duration="6263000" />
+      <workItem from="1641303489289" duration="2418000" />
+      <workItem from="1641383763483" duration="8653000" />
+      <workItem from="1641445480570" duration="1115000" />
+      <workItem from="1641747523131" duration="4333000" />
+      <workItem from="1641801143013" duration="1811000" />
+      <workItem from="1641824541152" duration="2301000" />
+      <workItem from="1641877646885" duration="1090000" />
+      <workItem from="1642175406394" duration="1451000" />
+      <workItem from="1642349248404" duration="6139000" />
+      <workItem from="1642422275198" duration="1267000" />
+      <workItem from="1642572366093" duration="1208000" />
+      <workItem from="1642618994187" duration="1585000" />
+      <workItem from="1642680442220" duration="3096000" />
+      <workItem from="1642842649575" duration="715000" />
+      <workItem from="1642846394778" duration="317000" />
+      <workItem from="1642846949022" duration="84000" />
+      <workItem from="1642962044946" duration="800000" />
+      <workItem from="1642963666734" duration="1304000" />
+      <workItem from="1644901853908" duration="1130000" />
+      <workItem from="1645289118041" duration="2005000" />
     </task>
-    <task id="LOCAL-00001" summary="init">
-      <created>1634500528956</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00020" summary="Модель памяти Java [#267917]">
+      <created>1636137216841</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1634500528956</updated>
+      <updated>1636137216842</updated>
     </task>
-    <task id="LOCAL-00002" summary="Init travis &amp; jacoco">
-      <created>1634575656083</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00021" summary=" Immutable объекты [#267918]">
+      <created>1636185004229</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1634575656083</updated>
+      <updated>1636185004229</updated>
     </task>
-    <task id="LOCAL-00003" summary="README">
-      <created>1634576034061</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00022" summary="Скачивание файла с ограничением. [#144271 #220966]">
+      <created>1636190983105</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1634576034061</updated>
+      <updated>1636190983105</updated>
     </task>
-    <task id="LOCAL-00004" summary="README">
-      <created>1634576107462</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00023" summary="Скачивание файла с ограничением. [#144271 #220966]">
+      <created>1636191252032</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1634576107462</updated>
+      <updated>1636191252032</updated>
     </task>
-    <task id="LOCAL-00005" summary="Added markers">
-      <created>1634576477291</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00024" summary="Скачивание файла с ограничением. [#144271 #220966]">
+      <created>1636390304267</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1634576477291</updated>
+      <updated>1636390304267</updated>
     </task>
-    <task id="LOCAL-00006" summary=" Запуск нити. Thread#start() [#1016]">
-      <created>1634579950850</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00025" summary=" Immutable объекты [#267918 #225163]">
+      <created>1636392934701</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1634579950850</updated>
+      <updated>1636392934701</updated>
     </task>
-    <task id="LOCAL-00007" summary=" Запуск нити. Thread#start() [#1016]">
-      <created>1634630193563</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00026" summary="Thread без общих ресурсов [#267919]">
+      <created>1636394368081</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1634630193563</updated>
+      <updated>1636394368081</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00027" summary=" Immutable объекты [#267918 #225163]">
+      <created>1636449347400</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1636449347400</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Thread без общих ресурсов [#267919 #226303]">
+      <created>1636449413076</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1636449413076</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Visibility. Общий ресурс вне критической секции [#1102]">
+      <created>1636815304922</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1636815304922</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Visibility. Общий ресурс вне критической секции [#1102 #228153]">
+      <created>1636913070458</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1636913070458</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Visibility. Общий ресурс вне критической секции [#1102 #228153]">
+      <created>1636997438093</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1636997438093</updated>
+    </task>
+    <task id="LOCAL-00032" summary="JCIP. Настройка библиотеки [#268575]">
+      <created>1637004464981</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1637004464981</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Visibility. Общий ресурс вне критической секции [#1102 #228153]">
+      <created>1637056895708</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1637056895709</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Класс хранилища пользователей UserStorage [#1104]">
+      <created>1637347396147</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1637347396147</updated>
+    </task>
+    <task id="LOCAL-00035" summary=" Класс хранилища пользователей UserStorage [#1104 #230621]">
+      <created>1637415558058</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1637415558058</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Класс хранилища пользователей UserStorage [#1104 #230621]">
+      <created>1637691723442</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1637691723442</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Класс хранилища пользователей UserStorage [#1104 #230621]">
+      <created>1637741286476</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1637741286477</updated>
+    </task>
+    <task id="LOCAL-00038" summary="ThreadSafe динамический список [#1105]">
+      <created>1637904150611</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1637904150611</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Управление нитью через wait. [#6858]">
+      <created>1638296564991</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1638296564991</updated>
+    </task>
+    <task id="LOCAL-00040" summary=" Управление нитью через wait. [#6858 #234580]">
+      <created>1638348474680</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1638348474680</updated>
+    </task>
+    <task id="LOCAL-00041" summary=" Реализовать шаблон Producer Consumer. [#1098]">
+      <created>1638563805383</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1638563805383</updated>
+    </task>
+    <task id="LOCAL-00042" summary=" Реализовать шаблон Producer Consumer. [#1098]">
+      <created>1638564254799</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1638564254799</updated>
+    </task>
+    <task id="LOCAL-00043" summary=" Реализовать шаблон Producer Consumer. [#1098]">
+      <created>1638634874220</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1638634874220</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Обеспечить остановку потребителя. [#66825]">
+      <created>1638639316640</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1638639316641</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Junit тест для блокирующей очереди. [#68589]">
+      <created>1638890428717</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1638890428717</updated>
+    </task>
+    <task id="LOCAL-00046" summary="CAS - операции [#6859]">
+      <created>1638974896834</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1638974896834</updated>
+    </task>
+    <task id="LOCAL-00047" summary="CAS - операции [#6859]">
+      <created>1639061567357</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1639061567358</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Неблокирующий кеш [#4741]">
+      <created>1639061690492</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1639061690492</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Неблокирующий кеш [#4741 #238040]">
+      <created>1639151364166</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1639151364166</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Неблокирующий кеш [#4741 #238040]">
+      <created>1639226449901</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1639226449905</updated>
+    </task>
+    <task id="LOCAL-00051" summary=" Реализовать ThreadPool [#1099]">
+      <created>1639554288058</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1639554288059</updated>
+    </task>
+    <task id="LOCAL-00052" summary=" Реализовать ThreadPool [#1099]">
+      <created>1639554924394</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1639554924394</updated>
+    </task>
+    <task id="LOCAL-00053" summary=" Реализовать ThreadPool [#1099]">
+      <created>1639675897692</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1639675897692</updated>
+    </task>
+    <task id="LOCAL-00054" summary=" Реализовать ThreadPool [#1099]">
+      <created>1639676005533</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1639676005533</updated>
+    </task>
+    <task id="LOCAL-00055" summary="ExecutorService рассылка почты. [#63097]">
+      <created>1639682368589</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1639682368589</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Реализовать ThreadPool [#1099 #240232]">
+      <created>1639753448158</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1639753448160</updated>
+    </task>
+    <task id="LOCAL-00057" summary="ExecutorService рассылка почты. [#63097 #240905]">
+      <created>1639816642933</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1639816642934</updated>
+    </task>
+    <task id="LOCAL-00058" summary="ExecutorService рассылка почты. [#63097 #240905]">
+      <created>1639831448923</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1639831448924</updated>
+    </task>
+    <task id="LOCAL-00059" summary="ForkJoinPool [#315067]">
+      <created>1640358866737</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1640358866737</updated>
+    </task>
+    <task id="LOCAL-00060" summary="ForkJoinPool [#315067]">
+      <created>1640710834154</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1640710834155</updated>
+    </task>
+    <task id="LOCAL-00061" summary="ForkJoinPool [#315067]">
+      <created>1640711540439</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1640711540439</updated>
+    </task>
+    <task id="LOCAL-00062" summary="ForkJoinPool [#315067]">
+      <created>1640935201718</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1640935201720</updated>
+    </task>
+    <task id="LOCAL-00063" summary="ompletableFuture [#361626]">
+      <created>1641282956412</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1641282956413</updated>
+    </task>
+    <task id="LOCAL-00064" summary="ompletableFuture [#361626]">
+      <created>1641402901147</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1641402901147</updated>
+    </task>
+    <task id="LOCAL-00065" summary="СompletableFuture [#361626]">
+      <created>1641803960568</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1641803960569</updated>
+    </task>
+    <task id="LOCAL-00066" summary="СompletableFuture [#361626]">
+      <created>1642621129790</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1642621129791</updated>
+    </task>
+    <task id="LOCAL-00067" summary="СompletableFuture [#361626]">
+      <created>1645289893142</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1645289893143</updated>
+    </task>
+    <task id="LOCAL-00068" summary="СompletableFuture [#361626]">
+      <created>1645290092264</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1645290092264</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,11 +710,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
-    <MESSAGE value="Init travis &amp; jacoco" />
-    <MESSAGE value="README" />
-    <MESSAGE value="Added markers" />
-    <MESSAGE value=" Запуск нити. Thread#start() [#1016]" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Запуск нити. Thread#start() [#1016]" />
+    <MESSAGE value="Thread без общих ресурсов [#267919]" />
+    <MESSAGE value=" Immutable объекты [#267918 #225163]" />
+    <MESSAGE value="Thread без общих ресурсов [#267919 #226303]" />
+    <MESSAGE value="Visibility. Общий ресурс вне критической секции [#1102]" />
+    <MESSAGE value="JCIP. Настройка библиотеки [#268575]" />
+    <MESSAGE value="Visibility. Общий ресурс вне критической секции [#1102 #228153]" />
+    <MESSAGE value="Класс хранилища пользователей UserStorage [#1104]" />
+    <MESSAGE value=" Класс хранилища пользователей UserStorage [#1104 #230621]" />
+    <MESSAGE value="Класс хранилища пользователей UserStorage [#1104 #230621]" />
+    <MESSAGE value="ThreadSafe динамический список [#1105]" />
+    <MESSAGE value="Управление нитью через wait. [#6858]" />
+    <MESSAGE value=" Управление нитью через wait. [#6858 #234580]" />
+    <MESSAGE value=" Реализовать шаблон Producer Consumer. [#1098]" />
+    <MESSAGE value="Обеспечить остановку потребителя. [#66825]" />
+    <MESSAGE value="Junit тест для блокирующей очереди. [#68589]" />
+    <MESSAGE value="CAS - операции [#6859]" />
+    <MESSAGE value="Неблокирующий кеш [#4741]" />
+    <MESSAGE value="Неблокирующий кеш [#4741 #238040]" />
+    <MESSAGE value=" Реализовать ThreadPool [#1099]" />
+    <MESSAGE value="ExecutorService рассылка почты. [#63097]" />
+    <MESSAGE value="Реализовать ThreadPool [#1099 #240232]" />
+    <MESSAGE value="ExecutorService рассылка почты. [#63097 #240905]" />
+    <MESSAGE value="ForkJoinPool [#315067]" />
+    <MESSAGE value="ompletableFuture [#361626]" />
+    <MESSAGE value="СompletableFuture [#361626]" />
+    <option name="LAST_COMMIT_MESSAGE" value="СompletableFuture [#361626]" />
   </component>
 </project>
