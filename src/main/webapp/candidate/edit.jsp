@@ -1,6 +1,13 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Екатерина
+  Date: 22.02.2022
+  Time: 22:01
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="ru.job4j.dream.store.Store" %>
-<%@ page import="ru.job4j.dream.model.Post" %>
+<%@ page import="ru.job4j.dream.model.Candidate" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,40 +28,20 @@
     <title>Работа мечты</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="<%=request.getContextPath()%>/posts.jsp">Вакансии</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<%=request.getContextPath()%>/candidates.jsp">Кандидаты</a>
-            </li>
-        </ul>
-    </div>
+<div class="container pt-3">
     <div class="row">
         <div class="card" style="width: 100%">
             <div class="card-header">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<%=request.getContextPath()%>/posts.jsp">Сегодняшние вакансии.</a>
-                    </li>
-                </ul>
+                Новый кандидат.
             </div>
             <div class="card-body">
-            </div>
-        </div>
-    </div>
-    <div class="row pt-3">
-        <div class="card" style="width: 100%">
-            <div class="card-header">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<%=request.getContextPath()%>/posts.jsp">Сегодняшние кандидаты.</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label>Имя</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                </form>
             </div>
         </div>
     </div>
