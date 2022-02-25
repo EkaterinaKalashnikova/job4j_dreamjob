@@ -56,7 +56,7 @@
             <div class="card-header">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="<%=request.getContextPath()%>/posts.jsp">Сегодняшние кандидаты.</a>
+                        <a class="nav-link" href="<%=request.getContextPath()%>/candidates.jsp">Сегодняшние кандидаты.</a>
                     </li>
                 </ul>
             </div>
