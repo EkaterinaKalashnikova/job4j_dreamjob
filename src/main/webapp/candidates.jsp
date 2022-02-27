@@ -1,14 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Екатерина
-  Date: 22.02.2022
-  Time: 20:44
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ page import="ru.job4j.dream.store.Store" %>
 <%@ page import="ru.job4j.dream.model.Candidate" %>
 <%@ page import="java.util.Collection" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -46,27 +40,16 @@
                     </tr>
                     </thead>
                     <tbody>
-<%--                    <% for (Candidate candidate : Store.instOf().findAllCandidates()) { %>--%>
-<%--                    &lt;%&ndash;                    <% for (Candidate candidate : (Collection<Candidate>) request.getAttribute("candidates")) { %>&ndash;%&gt;--%>
-<%--                    <tr>--%>
-<%--                        <td>--%>
-<%--                            <a href="<%=request.getContextPath()%>/candidates.do?id=<%=candidate.getId()%>">--%>
-<%--                                <i class="fa fa-edit mr-3"></i>--%>
-<%--                            </a>--%>
-<%--                            <%=candidate.getName()%>--%>
-<%--                        </td>--%>
-<%--                    </tr>--%>
-<%--                    <% } %>--%>
-                    <% for (Candidate candidate : (Collection<Candidate>) request.getAttribute("candidates")) { %>
-                    <tr>
-                        <td>
-                            <a href="<%=request.getContextPath()%>/candidates.do?id=<%=candidate.getId()%>">
-                                <i class="fa fa-edit mr-3"></i>
-                            </a>
-                            <%=candidate.getName()%>
-                        </td>
-                    </tr>
-                    <% } %>
+                    <c:forEach items="${candidates}" var="candidate">
+                        <tr>
+                            <td>
+                                <a href='<c:url value="/candidate/edit.jsp?id=${candidate.id}"/>'>
+                                    <i class="fa fa-edit mr-3"></i>
+                                </a>
+                                <c:out value="${candidate.name}"/>
+                            </td>
+                        </tr>
+                    </c:forEach>
                     </tbody>
                 </table>
             </div>
