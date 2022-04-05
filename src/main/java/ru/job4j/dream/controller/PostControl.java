@@ -7,13 +7,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.job4j.dream.model.Post;
 import ru.job4j.dream.store.PostStore;
-import java.util.List;
 
 @Controller
 public class PostControl {
 
     private final PostStore store = PostStore.instOf();
-    private List<Post> postStore;
 
     @GetMapping("/posts")
     public String posts(Model model) {
@@ -34,7 +32,7 @@ public class PostControl {
 
     @PostMapping("/savePost")
     public String savePost(@ModelAttribute Post post) {
-        postStore.add(post);
+        store.add(post);
         return "redirect:/posts";
     }
 }
