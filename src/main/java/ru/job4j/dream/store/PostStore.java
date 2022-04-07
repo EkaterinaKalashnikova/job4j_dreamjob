@@ -36,4 +36,30 @@ public class PostStore {
     public Post add(Post post) {
        return posts.putIfAbsent(ID.get(), post);
     }
+
+    public boolean update(Post post) {
+        boolean flag = false;
+        Post pst = findById(post.getId());
+        if (pst != null) {
+            posts.put(ID.get(), post);
+            flag = true;
+        }
+        return flag;
+    }
+
+    public Post create(Post post) {
+        Post pst = findById(post.getId());
+        if (pst == null) {
+            posts.computeIfAbsent(ID.get(), v -> {
+                post.setId(v);
+                return post;
+            });
+            return post;
+        }
+        return null;
+    }
+
+    public Post findById(int id) {
+        return posts.get(id);
+    }
 }
