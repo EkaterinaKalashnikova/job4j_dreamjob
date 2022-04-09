@@ -41,7 +41,7 @@ public class PostStore {
         boolean flag = false;
         Post pst = findById(post.getId());
         if (pst != null) {
-            posts.put(ID.get(), post);
+            posts.replace(post.getId(), post);
             flag = true;
         }
         return flag;
