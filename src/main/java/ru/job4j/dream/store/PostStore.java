@@ -14,7 +14,7 @@ public class PostStore {
 
     private final Map<Integer, Post> posts = new ConcurrentHashMap<>();
 
-    private static final AtomicInteger ID = new AtomicInteger();
+    private static final AtomicInteger ID = new AtomicInteger(4);
 
     private PostStore() {
         posts.put(1, new Post(1, "Junior Java Job", "умеет программировать, "
@@ -34,7 +34,7 @@ public class PostStore {
     }
 
     public Post add(Post post) {
-       return posts.putIfAbsent(ID.get(), post);
+        return posts.putIfAbsent(ID.getAndIncrement(), INST.create(post));
     }
 
     public boolean update(Post post) {
@@ -50,7 +50,7 @@ public class PostStore {
     public Post create(Post post) {
         Post pst = findById(post.getId());
         if (pst == null) {
-            posts.computeIfAbsent(ID.get(), v -> {
+            posts.computeIfAbsent(ID.getAndIncrement(), v -> {
                 post.setId(v);
                 return post;
             });
