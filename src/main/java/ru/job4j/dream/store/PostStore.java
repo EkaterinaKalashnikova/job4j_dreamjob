@@ -62,4 +62,12 @@ public class PostStore {
     public Post findById(int id) {
         return posts.get(id);
     }
+
+    public boolean delete(int id) {
+        if (findById(id) != null) {
+            posts.remove(id);
+            return true;
+        }
+        return false;
+    }
 }
