@@ -6,7 +6,18 @@ import java.util.List;
 
 public class PostService {
 
-    private PostService store;
+    private static PostService store;
+
+    private PostService() {
+
+    }
+
+    public static PostService getInstance() {
+        if (store == null) {
+            store = new PostService();
+        }
+        return store;
+    }
 
     public List<Post> findAll() {
         return store.findAll();
@@ -20,13 +31,13 @@ public class PostService {
         return store.create();
     }
 
-   public boolean update() {
+    public boolean update() {
         return store.update();
-   }
+    }
 
-   public Post findById() {
+    public Post findById() {
         return store.findById();
-   }
+    }
 
     public boolean delete() {
         return store.delete();
