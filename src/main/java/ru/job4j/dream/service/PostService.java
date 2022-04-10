@@ -1,45 +1,41 @@
 package ru.job4j.dream.service;
 
+import org.springframework.stereotype.Service;
 import ru.job4j.dream.model.Post;
+import ru.job4j.dream.store.PostStore;
 
-import java.util.List;
+import java.util.Collection;
 
+@Service
 public class PostService {
 
-    private static PostService store;
+    private final PostStore store;
 
-    private PostService() {
-
+    private PostService(PostStore store) {
+        this.store = store;
     }
 
-    public static PostService getInstance() {
-        if (store == null) {
-            store = new PostService();
-        }
-        return store;
-    }
-
-    public List<Post> findAll() {
+    public Collection<Post> findAll() {
         return store.findAll();
     }
 
-    public Post add() {
-        return store.add();
+    public Post add(Post post) {
+        return store.add(post);
     }
 
-    public Post create() {
-        return store.create();
+    public Post create(Post post) {
+        return store.create(post);
     }
 
-    public boolean update() {
-        return store.update();
+    public boolean update(Post post) {
+        return store.update(post);
     }
 
-    public Post findById() {
-        return store.findById();
+    public Post findById(int id) {
+        return store.findById(id);
     }
 
-    public boolean delete() {
-        return store.delete();
+    public boolean delete(int id) {
+        return store.delete(id);
     }
 }
