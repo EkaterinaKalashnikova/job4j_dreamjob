@@ -32,7 +32,8 @@ public class CandidateStore {
     }
 
     public Candidate add(Candidate candidate) {
-        return candidates.putIfAbsent(ID.getAndIncrement(), INST.create(candidate));
+        candidate.setId(ID.getAndIncrement());
+        return candidates.putIfAbsent(candidate.getId(), candidate);
     }
 
     public boolean update(Candidate candidate) {

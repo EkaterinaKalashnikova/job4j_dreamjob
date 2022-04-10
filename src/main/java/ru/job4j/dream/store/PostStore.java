@@ -34,7 +34,8 @@ public class PostStore {
     }
 
     public Post add(Post post) {
-        return posts.putIfAbsent(ID.getAndIncrement(), INST.create(post));
+        post.setId(ID.getAndIncrement());
+        return posts.putIfAbsent(post.getId(), post);
     }
 
     public boolean update(Post post) {
