@@ -11,7 +11,12 @@ import ru.job4j.dream.store.CandidateStore;
 
 @Controller
 public class CandidateControl {
-    private final CandidateStore store = CandidateStore.instOf();
+
+    private final CandidateStore store;
+
+    public CandidateControl() {
+        this.store = CandidateStore.instOf();
+    }
 
     @GetMapping("/candidates")
     public String candidates(Model model) {
