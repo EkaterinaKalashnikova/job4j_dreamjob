@@ -11,8 +11,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Repository
 public class CandidateStore {
 
-    private static final CandidateStore INST = new CandidateStore();
-
     private final Map<Integer, Candidate> candidates = new ConcurrentHashMap<>();
 
     private static final AtomicInteger ID = new AtomicInteger(5);
@@ -24,20 +22,16 @@ public class CandidateStore {
         candidates.put(4, new Candidate(4, "Anna", "entered the 1st year of MSTU", LocalDateTime.now()));
     }
 
-    public static CandidateStore instOf() {
-        return INST;
-    }
-
-    public Collection<Candidate> findAll() {
+    public synchronized Collection<Candidate> findAll() {
         return candidates.values();
     }
 
-    public Candidate add(Candidate candidate) {
+    public synchronized Candidate add(Candidate candidate) {
         candidate.setId(ID.getAndIncrement());
         return candidates.putIfAbsent(candidate.getId(), candidate);
     }
 
-    public boolean update(Candidate candidate) {
+    public synchronized boolean update(Candidate candidate) {
         boolean flag = false;
         Candidate cdt = findById(candidate.getId());
         if (cdt != null) {
@@ -47,7 +41,7 @@ public class CandidateStore {
         return flag;
     }
 
-    public Candidate create(Candidate candidate) {
+    public synchronized Candidate create(Candidate candidate) {
         Candidate cdt = findById(candidate.getId());
         if (cdt == null) {
             candidates.computeIfAbsent(ID.getAndIncrement(), v -> {
@@ -59,11 +53,11 @@ public class CandidateStore {
         return null;
     }
 
-    public Candidate findById(int id) {
+    public synchronized Candidate findById(int id) {
         return candidates.get(id);
     }
 
-    public boolean delete(int id) {
+    public synchronized boolean delete(int id) {
         if (findById(id) != null) {
             candidates.remove(id);
             return true;

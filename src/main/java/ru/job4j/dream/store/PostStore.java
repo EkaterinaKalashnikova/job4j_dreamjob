@@ -25,16 +25,16 @@ public class PostStore {
                 + "Помогает другим: ставит им задачи, учит. В критических ситуациях берет на себя ответственность и риски", LocalDateTime.now()));
     }
 
-    public Collection<Post> findAll() {
+    public synchronized Collection<Post> findAll() {
         return posts.values();
     }
 
-    public Post add(Post post) {
+    public synchronized Post add(Post post) {
         post.setId(ID.getAndIncrement());
         return posts.putIfAbsent(post.getId(), post);
     }
 
-    public boolean update(Post post) {
+    public synchronized boolean update(Post post) {
         boolean flag = false;
         Post pst = findById(post.getId());
         if (pst != null) {
@@ -44,7 +44,7 @@ public class PostStore {
         return flag;
     }
 
-    public Post create(Post post) {
+    public synchronized Post create(Post post) {
         Post pst = findById(post.getId());
         if (pst == null) {
             posts.computeIfAbsent(ID.getAndIncrement(), v -> {
@@ -56,11 +56,11 @@ public class PostStore {
         return null;
     }
 
-    public Post findById(int id) {
+    public synchronized Post findById(int id) {
         return posts.get(id);
     }
 
-    public boolean delete(int id) {
+    public synchronized boolean delete(int id) {
         if (findById(id) != null) {
             posts.remove(id);
             return true;
