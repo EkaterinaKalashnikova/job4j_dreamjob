@@ -1,21 +1,22 @@
 package ru.job4j.dream.service;
 
+import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Service;
 import ru.job4j.dream.model.Post;
 import ru.job4j.dream.store.PostStore;
-import java.util.Collection;
+import java.util.List;
 
 @Service
+@ThreadSafe
 public class PostService {
 
     private final PostStore store;
+    private CityService cityService;
+    private Post post;
+    private List<Post> posts;
 
     private PostService(PostStore store) {
         this.store = store;
-    }
-
-    public Collection<Post> findAll() {
-        return store.findAll();
     }
 
     public Post add(Post post) {
@@ -36,5 +37,15 @@ public class PostService {
 
     public boolean delete(int id) {
         return store.delete(id);
+    }
+
+    public List<Post> findAll() {
+        posts = (List<Post>) store.findAll();
+        posts.forEach(
+                post -> post.setCity(
+                        cityService.findById(post.getCity().getId())
+                )
+        );
+        return (List<Post>) store.findAll();
     }
 }

@@ -10,6 +10,7 @@ public class Post implements Serializable {
     private String description;
     private LocalDateTime created;
     private boolean visible;
+    private City city;
 
     public Post(int id, String name, String description, LocalDateTime created) {
         this.id = id;
@@ -67,6 +68,14 @@ public class Post implements Serializable {
         this.created = created;
     }
 
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -79,12 +88,13 @@ public class Post implements Serializable {
         return id == post.id
                 && name.equals(post.name)
                 && description.equals(post.description)
-                && created.equals(post.created);
+                && created.equals(post.created)
+                && city.equals(post.city);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description, created);
+        return Objects.hash(id, name, description, created, city);
     }
 }
 

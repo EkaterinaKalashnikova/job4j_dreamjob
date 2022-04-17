@@ -1,5 +1,6 @@
 package ru.job4j.dream.store;
 
+import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Repository;
 import ru.job4j.dream.model.Post;
 
@@ -10,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
+@ThreadSafe
 public class PostStore {
 
     private final Map<Integer, Post> posts = new ConcurrentHashMap<>();
@@ -25,16 +27,16 @@ public class PostStore {
                 + "Помогает другим: ставит им задачи, учит. В критических ситуациях берет на себя ответственность и риски", LocalDateTime.now()));
     }
 
-    public synchronized Collection<Post> findAll() {
+    public Collection<Post> findAll() {
         return posts.values();
     }
 
-    public synchronized Post add(Post post) {
+    public Post add(Post post) {
         post.setId(ID.getAndIncrement());
         return posts.putIfAbsent(post.getId(), post);
     }
 
-    public synchronized boolean update(Post post) {
+    public boolean update(Post post) {
         boolean flag = false;
         Post pst = findById(post.getId());
         if (pst != null) {
@@ -44,7 +46,7 @@ public class PostStore {
         return flag;
     }
 
-    public synchronized Post create(Post post) {
+    public Post create(Post post) {
         Post pst = findById(post.getId());
         if (pst == null) {
             posts.computeIfAbsent(ID.getAndIncrement(), v -> {
@@ -56,11 +58,11 @@ public class PostStore {
         return null;
     }
 
-    public synchronized Post findById(int id) {
+    public Post findById(int id) {
         return posts.get(id);
     }
 
-    public synchronized boolean delete(int id) {
+    public boolean delete(int id) {
         if (findById(id) != null) {
             posts.remove(id);
             return true;

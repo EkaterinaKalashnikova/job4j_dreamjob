@@ -1,14 +1,17 @@
 package ru.job4j.dream.model;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.Objects;
 
-public class Candidate {
+public class Candidate implements Serializable {
     private int id;
     private String name;
     private String desc;
     private LocalDateTime created;
     private boolean visible;
+    private byte[] photo;
 
     public Candidate(int id, String name, String desc, LocalDateTime created) {
         this.id = id;
@@ -66,6 +69,14 @@ public class Candidate {
         this.created = created;
     }
 
+    public byte[] getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -78,11 +89,12 @@ public class Candidate {
         return id == candidate.id
                 && Objects.equals(name, candidate.name)
                 && Objects.equals(desc, candidate.desc)
-                && Objects.equals(created, candidate.created);
+                && Objects.equals(created, candidate.created)
+                && Arrays.equals(photo, candidate.photo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, desc, created);
+        return Objects.hash(id, name, desc, created, photo);
     }
 }
