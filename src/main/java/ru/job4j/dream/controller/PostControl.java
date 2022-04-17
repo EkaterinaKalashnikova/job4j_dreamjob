@@ -29,9 +29,9 @@ public class PostControl {
         return "posts";
     }
 
-    @GetMapping("/addPost")
-    public String addPost(Model model) {
-        model.addAttribute("post", new Post(0, "Заполните поле"));
+    @GetMapping("/addPost/{postId}")
+    public String addPost(Model model, @PathVariable("postId") int id) {
+        model.addAttribute("post", new Post(0, "Заполните поле", cityService.findById(id)));
         return "addPost";
     }
 
