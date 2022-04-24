@@ -11,16 +11,8 @@ import java.util.List;
 @Service
 @ThreadSafe
 public class PostService {
-
     private final PostStore store;
     private CityService cityService;
-    private List<Post> posts;
-
-    /* private final PostDBStore store;
-
-   public PostService(PostDBStore store) {
-        this.store = store;
-    }*/
 
     private PostService(PostStore store, CityService cityService) {
         this.store = store;
@@ -48,7 +40,7 @@ public class PostService {
     }
 
     public List<Post> findAll() {
-        posts = store.findAll();
+        List<Post> posts = store.findAll();
         posts.forEach(
                 post -> post.setCity(
                         cityService.findById(post.getCity().getId())
