@@ -37,11 +37,6 @@ public class CandidateControl {
         return "addCandidate";
     }
 
-    @GetMapping("/formAddCandidate")
-    public String formAddCandidate(Model model) {
-        return "addCandidate";
-    }
-
     @GetMapping("/formUpdateCandidate/{candidateId}")
     public String formUpdateCandidate(Model model, @PathVariable("candidateId") int id) {
         model.addAttribute("candidate", candidateService.findById(id));

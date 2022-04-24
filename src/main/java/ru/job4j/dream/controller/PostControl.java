@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import ru.job4j.dream.model.City;
 import ru.job4j.dream.model.Post;
 import ru.job4j.dream.service.CityService;
 import ru.job4j.dream.service.PostService;
@@ -29,14 +30,9 @@ public class PostControl {
         return "posts";
     }
 
-    @GetMapping("/addPost/{postId}")
-    public String addPost(Model model, @PathVariable("postId") int id) {
-        model.addAttribute("post", new Post(0, "Заполните поле", cityService.findById(id)));
-        return "addPost";
-    }
-
-    @GetMapping("/formAddPost")
-    public String formAddPost(Model model) {
+    @GetMapping("/addPost")
+    public String addPost(Model model) {
+        model.addAttribute("post", new Post(0, "Заполните поле"));
         model.addAttribute("cities", cityService.getAllCities());
         return "addPost";
     }
@@ -44,6 +40,7 @@ public class PostControl {
     @GetMapping("/formUpdatePost/{postId}")
     public String formUpdatePost(Model model, @PathVariable("postId") int id) {
         model.addAttribute("post", postService.findById(id));
+        model.addAttribute("cities", cityService.getAllCities());
         return "updatePost";
     }
 
@@ -54,7 +51,7 @@ public class PostControl {
     }
 
     @PostMapping("/createPost")
-    public String createPost(@ModelAttribute Post post) {
+    public String createPost(@ModelAttribute Post post, @ModelAttribute City city) {
         postService.create(post);
         return "redirect:/posts";
     }

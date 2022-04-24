@@ -62,6 +62,8 @@
                     <span th:if="${!post.visible}">
                     <i class="fa fa-square-o"></i>
                     </span>
+                    <span th:text="${post.city.name}">
+                    </span>
                 </td>
                 <td th:text="${post.description}"/>
                 <td th:text="${post.created}"/>

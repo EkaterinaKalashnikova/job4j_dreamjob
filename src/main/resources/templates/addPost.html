@@ -32,9 +32,9 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="#">Главная</a>
                 <a class="nav-item nav-link" th:href="@{/posts}">Вакансии</a>
-                <a class="nav-item nav-link active" th:href="@{/formAddPost}">Добавить вакансию</a>
+                <a class="nav-item nav-link active" th:href="@{/addPost}">Добавить вакансию</a>
                 <a class="nav-item nav-link" th:href="@{/cadidates}">Кандидаты</a>
-                <a class="nav-item nav-link active" th:href="@{/formAddCandidate}">Добавить кандидата</a>
+                <a class="nav-item nav-link active" th:href="@{/addCandidate}">Добавить кандидата</a>
             </div>
         </div>
     </nav>
@@ -54,11 +54,6 @@
                         <label for="city.id">Город</label>
                         <select class="form-control" id="city.id" name="city.id">
                             <option th:each="city : ${cities}" th:value="${city.id}" th:text="${city.name}"></option>
-                            <option value="Moscow">Москва</option>
-                            <option value="Barcelona">Барселона</option>
-                            <option value="Lima">Лима</option>
-                            <option value="Kyiv">Киев</option>
-                            <option value="Santiago">Сантьяго</option>
                         </select>
                     </div>
                     <div class="form-check">
