@@ -51,7 +51,7 @@ public class PostControl {
     }
 
     @PostMapping("/createPost")
-    public String createPost(@ModelAttribute Post post, @ModelAttribute City city) {
+    public String createPost(@ModelAttribute Post post) {
         postService.create(post);
         return "redirect:/posts";
     }
