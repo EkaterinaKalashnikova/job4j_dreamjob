@@ -18,16 +18,16 @@ public class PostService {
         this.cityService = cityService;
     }
 
-    public boolean update(Post post) {
-        return store.update(post);
+    public void update(Post post) {
+        store.update(post);
     }
 
     public boolean delete(int id) {
         return store.delete(id);
     }
 
-    public Post add(Post post) {
-        return store.add(post);
+    public void add(Post post) {
+        store.add(post);
     }
 
     public Post findById(int id) {
@@ -41,10 +41,6 @@ public class PostService {
                         cityService.findById(post.getCity().getId())
                 )
         );
-        return store.findAll();
-    }
-
-    public Post create(Post post) {
-        return store.create(post);
+        return posts;
     }
 }

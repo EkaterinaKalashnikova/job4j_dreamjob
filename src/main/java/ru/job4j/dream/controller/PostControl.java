@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import ru.job4j.dream.model.City;
 import ru.job4j.dream.model.Post;
 import ru.job4j.dream.service.CityService;
 import ru.job4j.dream.service.PostService;
+
+import java.time.LocalDateTime;
 
 @Controller
 @ThreadSafe
@@ -32,27 +33,31 @@ public class PostControl {
 
     @GetMapping("/addPost")
     public String addPost(Model model) {
-        model.addAttribute("post", new Post(0, "Заполните поле"));
         model.addAttribute("cities", cityService.getAllCities());
+        model.addAttribute("post", new Post(0, "Заполните поле",
+                "Заполните поле", null, false, null));
         return "addPost";
     }
 
     @GetMapping("/formUpdatePost/{postId}")
     public String formUpdatePost(Model model, @PathVariable("postId") int id) {
-        model.addAttribute("post", postService.findById(id));
         model.addAttribute("cities", cityService.getAllCities());
+        model.addAttribute("post", postService.findById(id));
         return "updatePost";
     }
 
     @PostMapping("/updatePost")
     public String updatePost(@ModelAttribute Post post) {
+        post.setCity(cityService.findById(post.getCity().getId()));
         postService.update(post);
         return "redirect:/posts";
     }
 
-   @PostMapping("/createPost")
+    @PostMapping("/createPost")
     public String createPost(@ModelAttribute Post post) {
-        postService.create(post);
+        post.setCity(cityService.findById(post.getCity().getId()));
+        post.setCreated(LocalDateTime.now());
+        postService.add(post);
         return "redirect:/posts";
     }
 }

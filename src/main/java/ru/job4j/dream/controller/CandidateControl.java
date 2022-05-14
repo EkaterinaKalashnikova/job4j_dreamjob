@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.job4j.dream.model.Candidate;
 import ru.job4j.dream.service.CandidateService;
-
 import java.io.IOException;
 
 @Controller
