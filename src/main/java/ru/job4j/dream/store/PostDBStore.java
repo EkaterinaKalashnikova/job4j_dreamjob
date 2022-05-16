@@ -7,9 +7,12 @@ import ru.job4j.dream.model.Post;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @Repository
 public class PostDBStore {
+    private static final Logger LOGGER = Logger.getLogger(String.valueOf(PostDBStore.class));
 
     private final BasicDataSource pool;
 
@@ -45,7 +48,7 @@ public class PostDBStore {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
         }
         return posts;
     }
@@ -67,7 +70,7 @@ public class PostDBStore {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
         }
     }
 
@@ -84,7 +87,7 @@ public class PostDBStore {
             ps.setInt(6, post.getId());
             ps.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
         }
     }
 
@@ -104,7 +107,7 @@ public class PostDBStore {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
         }
         return null;
     }
@@ -116,7 +119,7 @@ public class PostDBStore {
             ps.setInt(1, id);
             result = ps.executeUpdate() > 0;
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
         }
         return result;
     }
