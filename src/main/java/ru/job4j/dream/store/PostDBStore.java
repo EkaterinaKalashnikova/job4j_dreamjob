@@ -1,18 +1,18 @@
 package ru.job4j.dream.store;
 
 import org.apache.commons.dbcp2.BasicDataSource;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Repository;
 import ru.job4j.dream.model.City;
 import ru.job4j.dream.model.Post;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 @Repository
 public class PostDBStore {
-    private static final Logger LOGGER = Logger.getLogger(String.valueOf(PostDBStore.class));
+    private static final Logger LOGGER = LogManager.getLogger(PostDBStore.class);
 
     private final BasicDataSource pool;
 
@@ -48,7 +48,7 @@ public class PostDBStore {
                 }
             }
         } catch (Exception e) {
-            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
+            LOGGER.error(e.getMessage(), e);
         }
         return posts;
     }
@@ -70,7 +70,7 @@ public class PostDBStore {
                 }
             }
         } catch (Exception e) {
-            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
+            LOGGER.error(e.getMessage(), e);
         }
     }
 
@@ -87,7 +87,7 @@ public class PostDBStore {
             ps.setInt(6, post.getId());
             ps.executeUpdate();
         } catch (SQLException e) {
-            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
+            LOGGER.error(e.getMessage(), e);
         }
     }
 
@@ -107,7 +107,7 @@ public class PostDBStore {
                 }
             }
         } catch (Exception e) {
-            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
+            LOGGER.error(e.getMessage(), e);
         }
         return null;
     }
@@ -119,7 +119,7 @@ public class PostDBStore {
             ps.setInt(1, id);
             result = ps.executeUpdate() > 0;
         } catch (SQLException e) {
-            LOGGER.log(Level.WARNING, "Welcome to Post!", e);
+            LOGGER.error(e.getMessage(), e);
         }
         return result;
     }

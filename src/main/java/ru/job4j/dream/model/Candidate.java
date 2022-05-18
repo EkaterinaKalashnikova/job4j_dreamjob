@@ -13,6 +13,14 @@ public class Candidate implements Serializable {
     private boolean visible;
     private byte[] photo;
 
+    public Candidate(int id, String name, String desc, LocalDateTime created, boolean visible) {
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+        this.created = created;
+        this.visible = visible;
+    }
+
     public Candidate(int id, String name, String desc, LocalDateTime created) {
         this.id = id;
         this.name = name;
@@ -27,6 +35,15 @@ public class Candidate implements Serializable {
 
     public Candidate() {
 
+    }
+
+    public Candidate(int id, String name, String desc, LocalDateTime created, boolean visible, byte[] photo) {
+        this.id = id;
+        this.name = name;
+        this.desc = desc;
+        this.created = created;
+        this.visible = visible;
+        this.photo = photo;
     }
 
     public boolean isVisible() {
