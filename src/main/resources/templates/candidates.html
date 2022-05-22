@@ -42,6 +42,7 @@
                 <th scope="col">Имя</th>
                 <th scope="col">Описание</th>
                 <th scope="col">Дата создания</th>
+                <th scope="col">Фото</th>
             </tr>
             </thead>
             <tbody>
@@ -51,7 +52,6 @@
                     <a th:href="@{|/formUpdateCandidate/${candidate.id}|}">
                         <i class="fa fa-edit"></i>
                     </a>
-                    <img th:width="150" th:high="150" th:src="@{|/photoCandidate/${candidate.id}|}">
                     <span th:text="${candidate.name}"></span>
                     <span th:if="${candidate.visible}">
                     <i class="fa fa-check-square-o"></i>
@@ -60,8 +60,11 @@
                     <i class="fa fa-square-o"></i>
                     </span>
                 </td>
-                <td th:text="${candidate.desc}"/>
-                <td th:text="${candidate.created}"/>
+                <td th:text="${candidate.description}"/>
+                <td th:text="${#temporals.format(candidate.created, 'dd-MM-yyyy HH:mm')}" />
+                <td>
+                    <img th:width="150" th:high="150" th:src="@{|/photoCandidate/${candidate.id}|}">
+                </td>
             </tr>
             </tbody>
         </table>

@@ -7,3 +7,11 @@ CREATE TABLE post (
    city_id Integer
 );
 
+CREATE TABLE candidate (
+   id SERIAL PRIMARY KEY,
+   name TEXT,
+   description TEXT,
+   created TIMESTAMP default current_timestamp,
+   visible BOOLEAN default false,
+   photo bytea
+);

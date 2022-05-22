@@ -8,23 +8,23 @@ import java.util.Objects;
 public class Candidate implements Serializable {
     private int id;
     private String name;
-    private String desc;
+    private String description;
     private LocalDateTime created;
     private boolean visible;
     private byte[] photo;
 
-    public Candidate(int id, String name, String desc, LocalDateTime created, boolean visible) {
+    public Candidate(int id, String name, String description, LocalDateTime created, boolean visible) {
         this.id = id;
         this.name = name;
-        this.desc = desc;
+        this.description = description;
         this.created = created;
         this.visible = visible;
     }
 
-    public Candidate(int id, String name, String desc, LocalDateTime created) {
+    public Candidate(int id, String name, String description, LocalDateTime created) {
         this.id = id;
         this.name = name;
-        this.desc = desc;
+        this.description = description;
         this.created = created;
     }
 
@@ -37,10 +37,10 @@ public class Candidate implements Serializable {
 
     }
 
-    public Candidate(int id, String name, String desc, LocalDateTime created, boolean visible, byte[] photo) {
+    public Candidate(int id, String name, String description, LocalDateTime created, boolean visible, byte[] photo) {
         this.id = id;
         this.name = name;
-        this.desc = desc;
+        this.description = description;
         this.created = created;
         this.visible = visible;
         this.photo = photo;
@@ -70,12 +70,12 @@ public class Candidate implements Serializable {
         this.name = name;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public LocalDateTime getCreated() {
@@ -105,13 +105,13 @@ public class Candidate implements Serializable {
         Candidate candidate = (Candidate) o;
         return id == candidate.id
                 && Objects.equals(name, candidate.name)
-                && Objects.equals(desc, candidate.desc)
+                && Objects.equals(description, candidate.description)
                 && Objects.equals(created, candidate.created)
                 && Arrays.equals(photo, candidate.photo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, desc, created, photo);
+        return Objects.hash(id, name, description, created, photo);
     }
 }

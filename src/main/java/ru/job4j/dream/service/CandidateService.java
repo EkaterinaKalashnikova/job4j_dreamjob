@@ -3,33 +3,29 @@ package ru.job4j.dream.service;
 import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Service;
 import ru.job4j.dream.model.Candidate;
-import ru.job4j.dream.store.CandidateStore;
-import java.util.Collection;
+import ru.job4j.dream.store.CandidateDbStore;
+import java.util.List;
 
 @Service
 @ThreadSafe
 public class CandidateService {
 
-    private final CandidateStore store;
+    private final CandidateDbStore store;
 
-    private CandidateService(CandidateStore store) {
+    public CandidateService(CandidateDbStore store) {
         this.store = store;
     }
 
-    public Collection<Candidate> findAll() {
+    public List<Candidate> findAll() {
         return store.findAll();
     }
 
-    public Candidate add(Candidate candidate) {
-        return store.add(candidate);
+    public void add(Candidate candidate) {
+         store.add(candidate);
     }
 
-    public Candidate create(Candidate candidate) {
-        return store.create(candidate);
-    }
-
-    public boolean update(Candidate candidate) {
-        return store.update(candidate);
+    public void update(Candidate candidate) {
+        store.update(candidate);
     }
 
     public Candidate findById(int id) {
