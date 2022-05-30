@@ -33,6 +33,11 @@ public class Post implements Serializable {
         this.city = city;
     }
 
+    public Post(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public boolean isVisible() {
         return visible;
     }
@@ -100,6 +105,18 @@ public class Post implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, description, created, city);
+    }
+
+    @Override
+    public String toString() {
+        return "Post{"
+                + "id=" + id
+                + ", name='" + name + '\''
+                + ", description='" + description + '\''
+                + ", created=" + created
+                + ", visible=" + visible
+                + ", city=" + city
+                + '}';
     }
 }
 

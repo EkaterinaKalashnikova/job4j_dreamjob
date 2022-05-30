@@ -115,7 +115,7 @@ public class PostDBStore {
     public boolean delete(int id) {
         boolean result = false;
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("DELETE * FROM post WHERE id = ?")) {
+             PreparedStatement ps = cn.prepareStatement("DELETE FROM post WHERE id = ?")) {
             ps.setInt(1, id);
             result = ps.executeUpdate() > 0;
         } catch (SQLException e) {

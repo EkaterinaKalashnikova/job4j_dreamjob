@@ -114,4 +114,16 @@ public class Candidate implements Serializable {
     public int hashCode() {
         return Objects.hash(id, name, description, created, photo);
     }
+
+    @Override
+    public String toString() {
+        return "Candidate{"
+                + "id=" + id
+                + ", name='" + name + '\''
+                + ", description='" + description + '\''
+                + ", created=" + created
+                + ", visible=" + visible
+                + ", photo=" + Arrays.toString(photo)
+                + '}';
+    }
 }
