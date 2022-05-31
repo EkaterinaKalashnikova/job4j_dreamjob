@@ -103,16 +103,12 @@ public class Candidate implements Serializable {
             return false;
         }
         Candidate candidate = (Candidate) o;
-        return id == candidate.id
-                && Objects.equals(name, candidate.name)
-                && Objects.equals(description, candidate.description)
-                && Objects.equals(created, candidate.created)
-                && Arrays.equals(photo, candidate.photo);
+        return id == candidate.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description, created, photo);
+        return Objects.hash(id);
     }
 
     @Override

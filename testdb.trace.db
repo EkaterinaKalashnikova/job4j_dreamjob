@@ -1,56 +1,92 @@
-2022-05-30 22:04:19 jdbc[3]: exception
+2022-05-31 07:06:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+INSERT INTO post(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?) [42102-200]
+2022-05-31 07:06:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post WHERE id = ? [42102-200]
+2022-05-31 07:06:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post [42102-200]
+2022-05-31 07:06:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+INSERT INTO post(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?) [42102-200]
+2022-05-31 07:06:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+DELETE FROM post WHERE id = ? [42102-200]
+2022-05-31 07:06:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post WHERE id = ? [42102-200]
+2022-05-31 07:06:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post [42102-200]
+2022-05-31 07:06:46 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+INSERT INTO post(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?) [42102-200]
+2022-05-31 07:06:46 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+UPDATE post SET name = ?, description = ?, created = ?, visible = ?, city_id = ? WHERE id = ? [42102-200]
+2022-05-31 07:06:46 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post WHERE id = ? [42102-200]
+2022-05-31 07:06:46 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post [42102-200]
+2022-05-31 07:08:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+INSERT INTO post(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?) [42102-200]
+2022-05-31 07:14:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post WHERE id = ? [42102-200]
+2022-05-31 07:14:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post [42102-200]
+2022-05-31 07:15:36 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+INSERT INTO post(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?) [42102-200]
+2022-05-31 07:15:36 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+DELETE FROM post WHERE id = ? [42102-200]
+2022-05-31 07:15:36 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post WHERE id = ? [42102-200]
+2022-05-31 07:15:36 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post [42102-200]
+2022-05-31 07:15:36 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+INSERT INTO post(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?) [42102-200]
+2022-05-31 07:15:36 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+UPDATE post SET name = ?, description = ?, created = ?, visible = ?, city_id = ? WHERE id = ? [42102-200]
+2022-05-31 07:15:36 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post WHERE id = ? [42102-200]
+2022-05-31 07:15:36 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "POST" не найдена
+Table "POST" not found; SQL statement:
+SELECT * FROM post [42102-200]
+2022-05-31 07:18:37 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "DATABASECHANGELOGLOCK" не найдена
 Table "DATABASECHANGELOGLOCK" not found; SQL statement:
 SELECT COUNT(*) FROM DATABASECHANGELOGLOCK [42102-200]
-2022-05-30 22:05:10 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM POST WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM POST WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM post WHERE id = ? [42001-200]
-2022-05-30 22:54:48 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 22:54:48 jdbc[5]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 22:54:48 jdbc[5]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 22:54:48 jdbc[5]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 22:54:48 jdbc[7]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 22:54:48 jdbc[7]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 22:54:48 jdbc[7]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 23:04:47 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 23:04:47 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 23:04:47 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 23:04:47 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
-2022-05-30 23:04:47 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; ожидалось "identifier"
-Syntax error in SQL statement "DELETE *[*] FROM CANDIDATE WHERE ID = ?"; expected "identifier"; SQL statement:
-DELETE * FROM candidate WHERE id = ? [42001-200]
