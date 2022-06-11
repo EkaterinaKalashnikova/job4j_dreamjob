@@ -70,12 +70,6 @@
             <scope>test</scope>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.testng</groupId>-->
-<!--            <artifactId>testng</artifactId>-->
-<!--            <version>RELEASE</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
@@ -84,12 +78,7 @@
             <scope>test</scope>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>org.testng</groupId>-->
-<!--            <artifactId>testng</artifactId>-->
-<!--            <version>7.6.0</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+
     </dependencies>
 
     <profiles>
@@ -101,9 +90,9 @@
                 <db.password></db.password>
                 <db.driver>org.h2.Driver</db.driver>
             </properties>
-<!--            <activation>-->
-<!--                <activeByDefault>true</activeByDefault>-->
-<!--            </activation>-->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
         <profile>
             <id>production</id>
@@ -113,9 +102,6 @@
                 <db.password>kindness</db.password>
                 <db.driver>org.postgresql.Driver</db.driver>
             </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
         </profile>
     </profiles>
     <build>

@@ -6,8 +6,10 @@ import org.junit.Test;
 import ru.job4j.dream.Main;
 import ru.job4j.dream.model.City;
 import ru.job4j.dream.model.Post;
+
 import java.time.LocalDateTime;
 import java.util.List;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -17,12 +19,12 @@ public class PostDBStoreTest {
 
     @Before
     public void init() {
-        store = new PostDBStore(new Main().loadPool());
+        this.store = new PostDBStore(new Main().loadPool());
     }
 
     @After
     public void end() {
-        List<Post> all = store.findAll();
+        List<Post> all = this.store.findAll();
         for (Post pst : all) {
             this.store.delete(pst.getId());
         }
