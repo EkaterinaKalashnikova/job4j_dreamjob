@@ -15,3 +15,13 @@ CREATE TABLE if not exists candidate (
    visible BOOLEAN default false,
    photo bytea
 );
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    email TEXT,
+    password TEXT,
+    created TIMESTAMP default current_timestamp
+);
+
+ALTER TABLE users ADD CONSTRAINT email_unique UNIQUE (email)
+
