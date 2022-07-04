@@ -21,6 +21,12 @@ public class UsersController {
         this.userService = userService;
     }
 
+    @GetMapping("/users")
+    public String users(Model model) {
+        model.addAttribute("users", this.userService.findAll());
+        return "users";
+    }
+
     @PostMapping("/registration")
     public String registration(Model model, @ModelAttribute User user) {
         Optional<User> regUser = userService.add(user);

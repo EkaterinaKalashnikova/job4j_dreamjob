@@ -18,8 +18,9 @@ CREATE TABLE if not exists candidate (
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    email TEXT,
-    password TEXT,
+    name TEXT,
+    email varchar(300),
+    password varchar(300),
     created TIMESTAMP default current_timestamp
 );
 

@@ -72,14 +72,11 @@ public class User implements Serializable {
         }
         User user = (User) o;
         return getId() == user.getId()
-                &&  Objects.equals(getName(), user.getName())
-                && Objects.equals(getEmail(), user.getEmail())
-                && Objects.equals(getPassword(), user.getPassword())
-                && Objects.equals(getCreated(), user.getCreated());
+                && Objects.equals(getName(), user.getName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getEmail(), getPassword(), getCreated());
+        return Objects.hash(getId(), getName());
     }
 }

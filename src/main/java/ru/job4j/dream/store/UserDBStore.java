@@ -41,6 +41,7 @@ public class UserDBStore {
     }
 
     public  Optional<User> add(User user) {
+        Optional<User> total = Optional.empty();
         try (Connection cn = pool.getConnection();
              PreparedStatement ps = cn.prepareStatement("INSERT INTO users(name, email, password, created) VALUES (?, ?, ?, ?)",
                      Statement.RETURN_GENERATED_KEYS)) {
@@ -53,15 +54,16 @@ public class UserDBStore {
                 if (id.next()) {
                     user.setId(id.getInt(1));
                 }
+                total = Optional.of(user);
             }
         } catch (Exception e) {
-            user = null;
             LOG.error(e.getMessage(), e);
         }
-        return Optional.ofNullable(user);
+        return total;
     }
 
     public  Optional<User> findUserByEmail(String email, String password) {
+        Optional<User> total = Optional.empty();
         try (Connection cn = pool.getConnection();
              PreparedStatement ps = cn.prepareStatement("SELECT * FROM users WHERE email = ? and password = ?")
         ) {
@@ -81,6 +83,6 @@ public class UserDBStore {
         } catch (Exception e) {
             LOG.error(e.getMessage(), e);
         }
-      return Optional.empty();
+      return total;
     }
 }
