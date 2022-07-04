@@ -62,7 +62,7 @@ public class UserDBStore {
         return total;
     }
 
-    public  Optional<User> findUserByEmail(String email, String password) {
+    public  Optional<User> findUserByEmailAndPassword(String email, String password) {
         Optional<User> total = Optional.empty();
         try (Connection cn = pool.getConnection();
              PreparedStatement ps = cn.prepareStatement("SELECT * FROM users WHERE email = ? and password = ?")

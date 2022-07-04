@@ -35,7 +35,7 @@ public class PostDBStore {
     public List<Post> findAll() {
         List<Post> posts = new ArrayList<>();
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("SELECT * FROM post")
+             PreparedStatement ps = cn.prepareStatement("SELECT * FROM POST")
         ) {
             try (ResultSet it = ps.executeQuery()) {
                 while (it.next()) {
@@ -55,7 +55,7 @@ public class PostDBStore {
 
     public void add(Post post) {
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("INSERT INTO post(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?)",
+             PreparedStatement ps = cn.prepareStatement("INSERT INTO POST(name, description, created, visible, city_id)  VALUES (?, ?, ?, ?, ?)",
                      PreparedStatement.RETURN_GENERATED_KEYS)
         ) {
             ps.setString(1, post.getName());
@@ -76,7 +76,7 @@ public class PostDBStore {
 
     public void update(Post post) {
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("UPDATE post SET name = ?, description = ?, created = ?, "
+             PreparedStatement ps = cn.prepareStatement("UPDATE POST SET name = ?, description = ?, created = ?, "
                              + "visible = ?, city_id = ? WHERE id = ?",
                      PreparedStatement.RETURN_GENERATED_KEYS)) {
             ps.setString(1, post.getName());
@@ -93,7 +93,7 @@ public class PostDBStore {
 
     public Post findById(int id) {
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("SELECT * FROM post WHERE id = ?")
+             PreparedStatement ps = cn.prepareStatement("SELECT * FROM POST WHERE id = ?")
         ) {
             ps.setInt(1, id);
             try (ResultSet it = ps.executeQuery()) {
@@ -115,7 +115,7 @@ public class PostDBStore {
     public boolean delete(int id) {
         boolean result = false;
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("DELETE FROM post WHERE id = ?")) {
+             PreparedStatement ps = cn.prepareStatement("DELETE FROM POST WHERE id = ?")) {
             ps.setInt(1, id);
             result = ps.executeUpdate() > 0;
         } catch (SQLException e) {

@@ -23,7 +23,7 @@ public class CandidateDbStore {
     public List<Candidate> findAll() {
         List<Candidate> candidates = new ArrayList<>();
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("SELECT * FROM candidate")
+             PreparedStatement ps = cn.prepareStatement("SELECT * FROM CANDIDATE")
         ) {
             try (ResultSet it = ps.executeQuery()) {
                 while (it.next()) {
@@ -43,7 +43,7 @@ public class CandidateDbStore {
 
     public void add(Candidate candidate) {
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("INSERT INTO candidate(name, description, created, visible, photo)  VALUES (?, ?, ?, ?, ?)",
+             PreparedStatement ps = cn.prepareStatement("INSERT INTO CANDIDATE(name, description, created, visible, photo)  VALUES (?, ?, ?, ?, ?)",
                      PreparedStatement.RETURN_GENERATED_KEYS)
         ) {
             ps.setString(1, candidate.getName());
@@ -64,7 +64,7 @@ public class CandidateDbStore {
 
     public void update(Candidate candidate) {
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("UPDATE candidate SET name = ?, description = ?, created = ?, "
+             PreparedStatement ps = cn.prepareStatement("UPDATE CANDIDATE SET name = ?, description = ?, created = ?, "
                              + "visible = ?, photo = ? WHERE id = ?",
                      PreparedStatement.RETURN_GENERATED_KEYS)) {
             ps.setString(1, candidate.getName());
@@ -81,7 +81,7 @@ public class CandidateDbStore {
 
     public Candidate findById(int id) {
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("SELECT * FROM candidate WHERE id = ?")
+             PreparedStatement ps = cn.prepareStatement("SELECT * FROM CANDIDATE WHERE id = ?")
         ) {
             ps.setInt(1, id);
             try (ResultSet it = ps.executeQuery()) {
@@ -103,7 +103,7 @@ public class CandidateDbStore {
     public boolean delete(int id) {
         boolean result = false;
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("DELETE FROM candidate WHERE id = ?")) {
+             PreparedStatement ps = cn.prepareStatement("DELETE FROM CANDIDATE WHERE id = ?")) {
             ps.setInt(1, id);
             result = ps.executeUpdate() > 0;
         } catch (SQLException e) {
