@@ -9,14 +9,12 @@ public class User implements Serializable {
     private String name;
     private String email;
     private String password;
-    private LocalDateTime created;
 
-    public User(int id, String name, String email, String password, LocalDateTime created) {
+    public User(int id, String name, String email, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.created = created;
     }
 
     public User() {
@@ -52,14 +50,6 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public LocalDateTime getCreated() {
-        return created;
-    }
-
-    public void setCreated(LocalDateTime created) {
-        this.created = created;
     }
 
     @Override

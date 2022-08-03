@@ -19,9 +19,8 @@ CREATE TABLE if not exists candidate (
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name TEXT,
-    email varchar(300),
-    password varchar(300),
-    created TIMESTAMP default current_timestamp
+    email varchar(300) unique ,
+    password varchar(300)
 );
 
 ALTER TABLE users ADD CONSTRAINT email_unique UNIQUE (email)

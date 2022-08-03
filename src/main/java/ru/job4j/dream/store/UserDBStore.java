@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import ru.job4j.dream.model.User;
 
 import java.sql.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -30,8 +29,7 @@ public class UserDBStore {
                     String name = it.getString("name");
                     String email = it.getString("email");
                     String password = it.getString("password");
-                    LocalDateTime created = it.getTimestamp("created").toLocalDateTime();
-                    users.add(new User(id, name, email, password, created));
+                    users.add(new User(id, name, email, password));
                 }
             }
         } catch (Exception e) {
@@ -43,12 +41,11 @@ public class UserDBStore {
     public  Optional<User> add(User user) {
         Optional<User> total = Optional.empty();
         try (Connection cn = pool.getConnection();
-             PreparedStatement ps = cn.prepareStatement("INSERT INTO users(name, email, password, created) VALUES (?, ?, ?, ?)",
+             PreparedStatement ps = cn.prepareStatement("INSERT INTO users(name, email, password) VALUES (?, ?, ?)",
                      Statement.RETURN_GENERATED_KEYS)) {
             ps.setString(1, user.getName());
             ps.setString(2, user.getEmail());
             ps.setString(3, user.getPassword());
-            ps.setTimestamp(4, Timestamp.valueOf(user.getCreated()));
             ps.execute();
             try (ResultSet id = ps.getGeneratedKeys()) {
                 if (id.next()) {
@@ -75,8 +72,7 @@ public class UserDBStore {
                     String name = it.getString("name");
                     String emails = it.getString("email");
                     String passwords = it.getString("password");
-                    LocalDateTime created = it.getTimestamp("created").toLocalDateTime();
-                    User user = new User(id, name, emails, passwords, created);
+                    User user = new User(id, name, emails, passwords);
                     return Optional.of(user);
                 }
             }

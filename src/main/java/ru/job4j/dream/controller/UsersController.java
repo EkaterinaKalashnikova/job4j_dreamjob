@@ -40,26 +40,31 @@ public class UsersController {
         return "redirect:/success";
     }
 
+    @GetMapping("/fail")
+    public  String regFail() {
+        return "redirect:/registrationPage?fail=true";
+    }
+
+    @GetMapping("/success")
+    public  String regSuccess() {
+        return "redirect:/index";
+    }
+
     @GetMapping("/registration")
     public String addUser(Model model) {
-        model.addAttribute("user", new User(0, "Заполните поле", "Заполните поле", "Заполните поле", null));
+        model.addAttribute("user", new User(0, "Заполните поле", "Заполните поле", "Заполните поле"));
         return "registration";
     }
 
     @GetMapping("/registrationPage")
     public String registrationPage(Model model, HttpSession session, @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
-        sessionAll(model, session);
         return "registration";
-    }
-
-    private void sessionAll(Model model, HttpSession session) {
     }
 
     @GetMapping("/loginPage")
     public String loginPage(Model model, HttpSession session, @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
-        sessionAll(model, session);
         return "login";
     }
 
@@ -76,11 +81,11 @@ public class UsersController {
         return "redirect:/index";
     }
 
-    @GetMapping("/logout")
+   /* @GetMapping("/logout")
     public String logout(HttpSession session) {
         session.invalidate();
         return "redirect:/loginPage";
-    }
+    }*/
 }
 /*1. Доработайте информацию о текущем пользователе в HttpSession.
 
