@@ -38,7 +38,7 @@ public class UserDBStore {
         return users;
     }
 
-    public  Optional<User> add(User user) {
+    public Optional<User> add(User user) {
         Optional<User> total = Optional.empty();
         try (Connection cn = pool.getConnection();
              PreparedStatement ps = cn.prepareStatement("INSERT INTO users(name, email, password) VALUES (?, ?, ?)",
@@ -59,7 +59,7 @@ public class UserDBStore {
         return total;
     }
 
-    public  Optional<User> findUserByEmailAndPassword(String email, String password) {
+    public Optional<User> findUserByEmailAndPassword(String email, String password) {
         Optional<User> total = Optional.empty();
         try (Connection cn = pool.getConnection();
              PreparedStatement ps = cn.prepareStatement("SELECT * FROM users WHERE email = ? and password = ?")
@@ -79,6 +79,6 @@ public class UserDBStore {
         } catch (Exception e) {
             LOG.error(e.getMessage(), e);
         }
-      return total;
+        return total;
     }
 }

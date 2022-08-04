@@ -41,12 +41,12 @@ public class UsersController {
     }
 
     @GetMapping("/fail")
-    public  String regFail() {
+    public String regFail() {
         return "redirect:/registrationPage?fail=true";
     }
 
     @GetMapping("/success")
-    public  String regSuccess() {
+    public String regSuccess() {
         return "redirect:/index";
     }
 
@@ -57,13 +57,13 @@ public class UsersController {
     }
 
     @GetMapping("/registrationPage")
-    public String registrationPage(Model model, HttpSession session, @RequestParam(name = "fail", required = false) Boolean fail) {
+    public String registrationPage(Model model, @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
         return "registration";
     }
 
     @GetMapping("/loginPage")
-    public String loginPage(Model model, HttpSession session, @RequestParam(name = "fail", required = false) Boolean fail) {
+    public String loginPage(Model model,  @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
         return "login";
     }
@@ -80,17 +80,5 @@ public class UsersController {
         session.setAttribute("user", userDb.get());
         return "redirect:/index";
     }
-
-   /* @GetMapping("/logout")
-    public String logout(HttpSession session) {
-        session.invalidate();
-        return "redirect:/loginPage";
-    }*/
 }
-/*1. Доработайте информацию о текущем пользователе в HttpSession.
 
-2. Добавьте вывод текущего пользователя на все html страницы в шапке.
-
-3. Добавьте кнопку выхода из аккаунта на страницы.
-
- */

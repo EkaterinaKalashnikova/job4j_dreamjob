@@ -4,6 +4,7 @@ import net.jcip.annotations.ThreadSafe;
 import org.springframework.stereotype.Service;
 import ru.job4j.dream.model.User;
 import ru.job4j.dream.store.UserDBStore;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -24,7 +25,7 @@ public class UserService {
         return this.userDBStore.findAll();
     }
 
-    public  Optional<User> findUserByEmailAndPassword(String email, String password) {
+    public Optional<User> findUserByEmailAndPassword(String email, String password) {
         return this.userDBStore.findUserByEmailAndPassword(email, password);
     }
 }

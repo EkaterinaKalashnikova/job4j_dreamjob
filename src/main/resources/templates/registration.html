@@ -17,7 +17,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-
     <title>Работа мечты!</title>
 </head>
 <body>
@@ -36,14 +35,6 @@
                 <a class="nav-item nav-link" th:href="@{/candidates}">Кандидаты</a>
                 <a class="nav-item nav-link" th:href="@{/formAddCandidate}">Создание кандидата</a>
                 <a class="nav-item nav-link" th:href="@{/registration}">Регистрация</a>
-<!--                <a class="nav-item nav-link" th:if="${user.name == 'Гость'}" th:href="@{/loginPage}">-->
-<!--                    <span th:text="${user.name}"></span>-->
-<!--                    <span> | Войти</span>-->
-<!--                </a>-->
-<!--                <a class="nav-item nav-link" th:if="${user.name != 'Гость'}" th:href="@{/logout}">-->
-<!--                    <span th:text="${user.name}"></span>-->
-<!--                    <span> | Выйти</span>-->
-<!--                </a>-->
             </div>
         </div>
     </nav>
@@ -53,7 +44,7 @@
                 Регистрация.
             </div>
             <div class="card-body">
-                <div th:if="${fail}"  id="my-alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+                <div th:if="${fail}" id="my-alert" class="alert alert-danger alert-dismissible fade show" role="alert">
                     Пользователь с такой почтой уже существует
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">×</span>
@@ -79,44 +70,11 @@
     </div>
 </div>
 <script>
-    $(function(){
-        window.setTimeout(function(){
+    $(function () {
+        window.setTimeout(function () {
             $('#my-alert').alert('close');
-        },5000);
+        }, 5000);
     });
 </script>
-
 </body>
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"-->
-<!--      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"-->
-<!--      layout:decorate="~{layout/layout}">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Registration</title>-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
-<!--</head>-->
-<!--<body>-->
-<!--<h2 style="width: 340px; margin: 40px auto">Registration.</h2>-->
-<!--<div id="loginFormDiv" class="screen" layout:fragment="content">-->
-<!--    <div class="login-form" style="width: 340px; margin: 40px auto">-->
-<!--        <form style="align-content: center" action="#" th:action="@{/registration}" th:object="${users}" method="post">-->
-<!--            <div>-->
-<!--                <label for="login">This will be your new chat login.</label>-->
-<!--                <input type="text" th:field="*{login}" id="login" placeholder="Login">-->
-<!--            </div>-->
-
-<!--            <div>-->
-<!--                <label for="password">Pick a password.</label>-->
-<!--                <input type="text" th:field="*{password}" id="password" placeholder="Password">-->
-<!--            </div>-->
-
-<!--            <button type="submit" id="loginButton">Registration</button>-->
-<!--            <a href="/login" style="width: 100px; margin: auto auto auto 195px">Sign In</a>-->
-<!--        </form>-->
-<!--    </div>-->
-<!--</div>-->
-<!--</body>-->
 </html>
