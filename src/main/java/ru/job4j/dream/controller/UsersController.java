@@ -25,18 +25,20 @@ public class UsersController {
     }
 
     @GetMapping("/users")
-    public String users(Model model) {
+    public String users(Model model, HttpSession session) {
         model.addAttribute("users", this.userService.findAll());
         return "users";
     }
 
     @PostMapping("/registration")
-    public String registration(Model model, @ModelAttribute User user) {
+    public String registration(Model model, HttpServletRequest req,  @ModelAttribute User user) {
         Optional<User> regUser = userService.add(user);
         if (regUser.isEmpty()) {
             model.addAttribute("message", "Пользователь с такой почтой уже существует");
-            return "redirect:/fail";
+            return "redirect:/rregistrationPage?fail=true";
         }
+        HttpSession session = req.getSession();
+        session.setAttribute("user", regUser.get());
         return "redirect:/success";
     }
 
@@ -51,20 +53,23 @@ public class UsersController {
     }
 
     @GetMapping("/registration")
-    public String addUser(Model model) {
+    public String addUser(Model model, HttpSession session) {
         model.addAttribute("user", new User(0, "Заполните поле", "Заполните поле", "Заполните поле"));
+        new IndexControl().index(model, session);
         return "registration";
     }
 
     @GetMapping("/registrationPage")
-    public String registrationPage(Model model, @RequestParam(name = "fail", required = false) Boolean fail) {
+    public String registrationPage(Model model, HttpSession session,  @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
+        new IndexControl().index(model, session);
         return "registration";
     }
 
     @GetMapping("/loginPage")
-    public String loginPage(Model model,  @RequestParam(name = "fail", required = false) Boolean fail) {
+    public String loginPage(Model model, HttpSession session, @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
+        new IndexControl().index(model, session);
         return "login";
     }
 
@@ -78,6 +83,12 @@ public class UsersController {
         }
         HttpSession session = req.getSession();
         session.setAttribute("user", userDb.get());
+        return "redirect:/index";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        session.invalidate();
         return "redirect:/index";
     }
 }
