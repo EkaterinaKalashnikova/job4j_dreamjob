@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import ru.job4j.dream.model.Post;
+import ru.job4j.dream.model.User;
 import ru.job4j.dream.service.CityService;
 import ru.job4j.dream.service.PostService;
 
@@ -26,10 +27,19 @@ public class PostControl {
         this.cityService = cityService;
     }
 
+    public static void sessionPost(Model model, HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            user = new User();
+            user.setName("Гость");
+        }
+        model.addAttribute("user", user);
+    }
+
     @GetMapping("/posts")
     public String posts(Model model, HttpSession session) {
         model.addAttribute("posts", postService.findAll());
-        new IndexControl().index(model, session);
+        sessionPost(model, session);
         return "posts";
     }
 
@@ -38,7 +48,7 @@ public class PostControl {
         model.addAttribute("cities", cityService.getAllCities());
         model.addAttribute("post", new Post(0, "Заполните поле",
                 "Заполните поле", null, false, null));
-        new IndexControl().index(model, session);
+        sessionPost(model, session);
         return "addPost";
     }
 

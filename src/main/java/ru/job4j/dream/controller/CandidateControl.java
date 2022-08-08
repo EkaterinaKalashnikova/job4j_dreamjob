@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import ru.job4j.dream.model.Candidate;
+import ru.job4j.dream.model.User;
 import ru.job4j.dream.service.CandidateService;
 
 import javax.servlet.http.HttpSession;
@@ -27,10 +28,19 @@ public class CandidateControl {
         this.candidateService = candidateService;
     }
 
+    public static void sessionCandidates(Model model, HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            user = new User();
+            user.setName("Гость");
+        }
+        model.addAttribute("user", user);
+    }
+
     @GetMapping("/candidates")
     public String candidates(Model model, HttpSession session) {
         model.addAttribute("candidates", candidateService.findAll());
-        new IndexControl().index(model, session);
+        sessionCandidates(model, session);
         return "candidates";
     }
 
@@ -38,7 +48,7 @@ public class CandidateControl {
     public String addCandidate(Model model, HttpSession session) {
         model.addAttribute("candidate", new Candidate(0, "Заполните поле",
                 "Заполните поле", null, false, null));
-        new IndexControl().index(model, session);
+        sessionCandidates(model, session);
         return "addCandidate";
     }
 

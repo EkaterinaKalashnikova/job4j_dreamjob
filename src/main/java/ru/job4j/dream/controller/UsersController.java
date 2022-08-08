@@ -25,9 +25,18 @@ public class UsersController {
     }
 
     @GetMapping("/users")
-    public String users(Model model, HttpSession session) {
+    public String users(Model model) {
         model.addAttribute("users", this.userService.findAll());
         return "users";
+    }
+
+    public static void sessionUser(Model model, HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if (user == null) {
+            user = new User();
+            user.setName("Гость");
+        }
+        model.addAttribute("user", user);
     }
 
     @PostMapping("/registration")
@@ -55,21 +64,21 @@ public class UsersController {
     @GetMapping("/registration")
     public String addUser(Model model, HttpSession session) {
         model.addAttribute("user", new User(0, "Заполните поле", "Заполните поле", "Заполните поле"));
-        new IndexControl().index(model, session);
+        sessionUser(model, session);
         return "registration";
     }
 
     @GetMapping("/registrationPage")
     public String registrationPage(Model model, HttpSession session,  @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
-        new IndexControl().index(model, session);
+        sessionUser(model, session);
         return "registration";
     }
 
     @GetMapping("/loginPage")
     public String loginPage(Model model, HttpSession session, @RequestParam(name = "fail", required = false) Boolean fail) {
         model.addAttribute("fail", fail != null);
-        new IndexControl().index(model, session);
+        sessionUser(model, session);
         return "login";
     }
 
