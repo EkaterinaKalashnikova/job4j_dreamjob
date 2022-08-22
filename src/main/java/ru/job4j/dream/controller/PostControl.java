@@ -53,7 +53,7 @@ public class PostControl {
     }
 
     @GetMapping("/formUpdatePost/{postId}")
-    public String formUpdatePost(Model model, HttpSession session,  @PathVariable("postId") int id) {
+    public String formUpdatePost(Model model, @PathVariable("postId") int id) {
         model.addAttribute("cities", cityService.getAllCities());
         model.addAttribute("post", postService.findById(id));
         return "updatePost";
