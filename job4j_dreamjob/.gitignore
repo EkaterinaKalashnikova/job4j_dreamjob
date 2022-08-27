@@ -1,3 +1,9 @@
 *.iml
 target
 .idea
+
+out
+*.log
+
+/testdb.mv.db
+/testdb.trace.db
