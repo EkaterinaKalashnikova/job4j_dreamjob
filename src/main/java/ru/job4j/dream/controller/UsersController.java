@@ -18,7 +18,7 @@ import java.util.Optional;
 @ThreadSafe
 public class UsersController {
 
-    private UserService userService;
+    private final UserService userService;
 
     public UsersController(UserService userService) {
         this.userService = userService;
@@ -44,7 +44,7 @@ public class UsersController {
         Optional<User> regUser = userService.add(user);
         if (regUser.isEmpty()) {
             model.addAttribute("message", "Пользователь с такой почтой уже существует");
-            return "redirect:/rregistrationPage?fail=true";
+            return "redirect:/registrationPage?fail=true";
         }
         HttpSession session = req.getSession();
         session.setAttribute("user", regUser.get());
